@@ -1,9 +1,7 @@
-namespace Hello {
-    class Program {
-        static void Main(string[] args) {
-            for(int i=0; i<10; i++) {
-                System.Console.WriteLine("Hello, World!");
-            }
+class Hello {
+    static void Main(string[] args) {
+        for(int i=0; i<10; i++) {
+            System.Console.WriteLine("Hello, World!");
         }
     }
 }
