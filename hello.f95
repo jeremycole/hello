@@ -1,6 +1,6 @@
 PROGRAM HELLO
       DO 1 I = 1, 10
-      PRINT *, "Hello, World!"
+      PRINT *, "HELLO, WORLD!"
     1 CONTINUE
 END PROGRAM HELLO
 
