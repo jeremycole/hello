@@ -1,3 +1,8 @@
+      * COBOL
+
+      * THIS IS HELLO WORLD
+      * WRITTEN IN COBOL.
+
        IDENTIFICATION DIVISION.
        PROGRAM-ID. 'HELLO'.
 
@@ -11,5 +16,6 @@
            STOP RUN.
 
        HELLO.
+      *    GREETINGS.
            DISPLAY "HELLO, WORLD!".
            ADD 1 TO I.

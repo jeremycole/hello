@@ -1,3 +1,10 @@
+# Assembly (x86-64, gas)
+
+/*
+  This is Hello World
+  written in Assembly.
+*/
+
         .globl  _main
 
 _main:

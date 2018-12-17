@@ -1,3 +1,10 @@
+(* Pascal *)
+
+(*
+  This is Hello World
+  written in Pascal.
+*)
+
 program Hello;
 
 var
@@ -6,6 +13,6 @@ var
 begin
   for i := 1 to 10 do
   begin
-    writeln ('Hello, World!')
+    writeln ('Hello, World!') (* Greetings. *)
   end;
 end.
