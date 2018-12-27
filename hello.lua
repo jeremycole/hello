@@ -5,6 +5,10 @@
   written in Lua.
 ]]--
 
-for i=1,10 do
-  print "Hello World!" -- Greetings
+function hello (n)
+  for i=1,n do
+    print "Hello World!" -- Greetings
+  end
 end
+
+hello(10)

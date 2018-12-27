@@ -5,6 +5,10 @@ This is Hello World
 written in Ruby.
 =end
 
-(0...10).each do |i|
+def hello(n)
+  (0...n).each do |i|
     puts "Hello, World!" # Greetings.
+  end
 end
+
+hello 10

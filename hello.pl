@@ -6,6 +6,11 @@ written in Perl.
 =end comment
 =cut
 
-for($i = 0; $i < 10; $i++) {
-  print "Hello, World!\n" # Greetings.
+sub hello {
+  my $n = @_[0];
+  for($i = 0; $i < $n; $i++) {
+    print "Hello, World!\n" # Greetings.
+  }
 }
+
+hello 10
