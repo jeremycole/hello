@@ -1,4 +1,4 @@
-# Assembly (x86-64, gas)
+# Assembly (macos x86_64, gas), only compiles on MacOS (using gcc, cstdlib required)
 
 /*
   This is Hello World
@@ -20,7 +20,7 @@ loop:
         # Print the "Hello, World!" message:
         movl    $1, %edi                # 1 = stdout
         leaq    message(%rip), %rsi     # address of message
-        movl    $14, %edx               # length of message
+        movl    message_size(%rip), %edx # length of message
         callq   _write                  # call _write syscall
 
         # Increment i, check if i < 10, jump to "loop" if so:
@@ -34,6 +34,5 @@ loop:
         popq    %rbp                    # restore previous rbp
         retq
 
-message:
-        .asciz  "Hello, World!\n"
-
+message: .asciz  "Hello, World!\n"
+message_size: .long 14 # TODO Hardcoded because i dont know what im doing
